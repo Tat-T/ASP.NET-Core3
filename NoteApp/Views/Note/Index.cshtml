@@ -1,0 +1,29 @@
+@model List<NoteApp.Models.Note>
+
+<h1>Список заметок</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Заголовок</th>
+            <th>Текст</th>
+            <th>Дата создания</th>
+            <th>Теги</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var note in Model)
+        {
+            <tr>
+                <td>@note.Title</td>
+                <td>@note.Text</td>
+                <td>@note.CreatedDate</td>
+                <td>@string.Join(", ", note.Tags)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/Note/Create">Создать новую заметку</a>
+<a href="/Note/SaveToFile">Сохранить заметки в файл</a>
+<a href="/Note/LoadFromFile">Загрузить заметки из файла</a>

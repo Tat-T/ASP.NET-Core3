@@ -1,0 +1,18 @@
+@model NoteApp.Models.Note
+
+<h1>Создать новую заметку</h1>
+
+<form asp-action="Create" method="post">
+    <label for="Title">Заголовок:</label>
+    <input type="text" id="Title" name="Title" required /><br />
+
+    <label for="Text">Текст:</label>
+    <textarea id="Text" name="Text" required></textarea><br />
+
+    <label for="Tags">Теги (через запятую):</label>
+    <input type="text" id="Tags" name="Tags" /><br />
+
+    <button type="submit">Создать запись</button>
+</form>
+
+<a href="/Note/Index">Обратно на страницу заметок</a>
