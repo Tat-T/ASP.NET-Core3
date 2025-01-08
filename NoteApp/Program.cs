@@ -9,6 +9,8 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+
+app.UseStaticFiles();
 // Настройка маршрутов
 app.MapControllerRoute(
     name: "default",

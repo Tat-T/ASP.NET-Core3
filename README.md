@@ -31,3 +31,9 @@
 - System.Xml для работы с XML: 
 
 `dotnet add package System.Xml`
+
+### Запуск
+
+`dotnet run`
+
+http://localhost:5143/Note/Index  - главная страница

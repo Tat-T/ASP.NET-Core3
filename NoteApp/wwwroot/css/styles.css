@@ -1,0 +1,95 @@
+/* Основные стили страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Контейнер для всего содержимого */
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Заголовок страницы */
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Стили для таблицы */
+.note-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.note-table th, .note-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.note-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.note-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.note-table tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Стили для ссылок */
+.links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links a.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.links a.button:hover {
+    background-color: #0056b3;
+}
+
+/* Удобные отступы для контента */
+.container {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Респонсивность для маленьких экранов */
+@media screen and (max-width: 600px) {
+    .note-table th, .note-table td {
+        font-size: 0.9em;
+        padding: 10px 12px;
+    }
+
+    .links a.button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
