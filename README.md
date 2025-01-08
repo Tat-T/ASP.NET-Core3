@@ -37,3 +37,5 @@
 `dotnet run`
 
 http://localhost:5143/Note/Index  - главная страница
+
+<img src="NoteApp/image/Screenshot_2.jpg" alt="фото" height="200">
